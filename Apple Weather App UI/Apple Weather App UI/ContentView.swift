@@ -144,7 +144,6 @@ struct TemperatureBarView: View {
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .leading) {
-                // Background bar (full width)
                 RoundedRectangle(cornerRadius: 5)
                     .fill(Color.white.opacity(0.3))
                     .frame(width: geo.size.width)
