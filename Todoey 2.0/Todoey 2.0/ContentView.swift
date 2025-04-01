@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Todoey
+//  Todoey 2.0
 //
-//  Created by Kashyap Kannajyosula on 2/25/25.
+//  Created by Kashyap Kannajyosula on 4/1/25.
 //
 
 import SwiftUI
@@ -12,6 +12,7 @@ struct Todo: Identifiable {
     var item: String
     var isDone: Bool
 }
+
 struct TodoRowView: View {
     @Binding var todo: Todo
     
@@ -24,6 +25,7 @@ struct TodoRowView: View {
         }
     }
 }
+
 struct ContentView: View {
     @State private var todos: [Todo] = [
         Todo(item: "Buy milk from store", isDone: false),
@@ -67,13 +69,14 @@ struct ContentView: View {
                 InfoView(title: $title, themeColor: $themeColor)
             }
         }
-        .tint(themeColor) // Apply theme color to navigation elements
+        .tint(themeColor)
     }
 }
 
 struct InfoView: View {
     @Binding var title: String
     @Binding var themeColor: Color
+    @Environment(\.dismiss) var dismiss // Fix dismissal method
     
     let colors: [Color] = [.red, .blue, .green, .yellow, .purple, .orange]
     
@@ -104,7 +107,7 @@ struct InfoView: View {
             .navigationTitle("Settings")
             .toolbar {
                 Button("Done") {
-                    UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: true)
+                    dismiss() // Correct dismissal
                 }
             }
         }

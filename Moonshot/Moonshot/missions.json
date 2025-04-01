@@ -1,0 +1,59 @@
+[
+  {
+    "id": "apollo11",
+    "name": "Apollo 11",
+    "launchDate": "1969-07-16",
+    "crew": [
+      {
+        "name": "Neil Armstrong",
+        "role": "Commander"
+      },
+      {
+        "name": "Buzz Aldrin",
+        "role": "Lunar Module Pilot"
+      },
+      {
+        "name": "Michael Collins",
+        "role": "Command Module Pilot"
+      }
+    ]
+  },
+  {
+    "id": "apollo13",
+    "name": "Apollo 13",
+    "launchDate": "1970-04-11",
+    "crew": [
+      {
+        "name": "Jim Lovell",
+        "role": "Commander"
+      },
+      {
+        "name": "Jack Swigert",
+        "role": "Command Module Pilot"
+      },
+      {
+        "name": "Fred Haise",
+        "role": "Lunar Module Pilot"
+      }
+    ]
+  },
+  {
+    "id": "apollo17",
+    "name": "Apollo 17",
+    "launchDate": "1972-12-07",
+    "crew": [
+      {
+        "name": "Eugene Cernan",
+        "role": "Commander"
+      },
+      {
+        "name": "Harrison Schmitt",
+        "role": "Lunar Module Pilot"
+      },
+      {
+        "name": "Ronald Evans",
+        "role": "Command Module Pilot"
+      }
+    ]
+  }
+]
